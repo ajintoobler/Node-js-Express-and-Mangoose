@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  head
+    title User Register
+  body
+    form(action='/loginuserinsert', method='post')
+      table.tableview
+        tr
+          td Username
+          td
+            input(type='text', name='username')
+        tr
+          td Password
+          td
+            input(type='text', name='password')
+        tr
+          td
+          td
+            input(type='submit', value='Add User')

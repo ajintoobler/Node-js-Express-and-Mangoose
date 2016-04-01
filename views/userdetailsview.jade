@@ -1,0 +1,40 @@
+html
+  head
+    title hgv
+    
+  body
+   -var i = 1
+   a(href='/home')
+      input.buttoncss(type='button', value='Back')
+  
+  
+
+  table.tableview(border='2', width='800px')
+    caption
+      h1
+        | User Details
+        h1 
+    tr
+      th ID
+      th User Name
+      th Password
+      th Phone
+      th Actions
+      
+    each item in data
+    
+      tr
+        td #{i}
+        td #{item.name}
+        td #{item.address}
+        td #{item.phone}
+        td
+          form(method='post', action='/delete')
+            input(type='hidden', name='id', value=item._id)
+            input(type='submit', name='delete', value='Delete')
+            
+          
+          a(href='/edit?id=' + item._id) 
+            input(type='button', name='edit', value='Edit')
+          -i++
+          

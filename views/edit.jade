@@ -1,0 +1,28 @@
+html
+  head
+    h1 User Details Edit
+  title Edit
+  body
+  each item in data
+    
+    form(action='/update', method='get')
+      input(type='hidden' name='id' value=item._id)
+      table
+        tr
+          td Name 
+          td
+            input(type='text' name='username' value=item.name)
+        tr
+          td Address 
+          td
+            input(type='text' name='address' value=item.address)
+        tr
+          td Phone
+          td
+            input(type='text' name='phone' value=item.phone)
+        tr
+          td
+            input.buttoncss(type='submit', value='update')
+          td
+            a(href='/home')
+              input.buttoncss(type='button', value='cancel')

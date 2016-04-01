@@ -1,0 +1,24 @@
+html
+  head
+    title
+  body
+  a.logoutlink(href='/logout') Logout
+  h1 Welcome
+  a(href='/view') view
+  form(action='/insert', method='get')
+    table.userDetailsForm
+      tr
+        td Name
+        td
+          input(type='text', name='customerName')
+      tr
+        td Address
+        td
+          textarea(name='custAddress')
+      tr
+        td Phone
+        td
+          input(type='text', name='custPhone')
+      tr
+        td(colspan='2', align='center')
+          input.buttoncss(type='submit')

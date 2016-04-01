@@ -1,0 +1,44 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.buttoncss {
+    height: 30px;
+    width: 100px;
+    border: 1px solid #7b163a;
+    float: left;
+    margin-top: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: #ff8040;
+    color: #fff;
+    font-weight: bold;
+}
+
+.textFormat {}
+
+.loginPortal {
+    margin-left: 500px;
+    margin-top: 250px;
+    background-color: #00B7FF;
+}
+
+.userDetailsForm {
+    margin-left: 500px;
+    margin-top: 100px;
+}
+.logoutlink
+{
+	margin-left:1200px;
+}
+.tableview{
+	margin-left: 320px;
+    margin-top: 200px;
+    padding: 5px,5px,5px,5px; 
+}

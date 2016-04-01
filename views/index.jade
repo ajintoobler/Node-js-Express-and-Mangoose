@@ -1,0 +1,20 @@
+html
+  head
+    title Login
+  body
+    form(action='/test', method='post')
+      table.loginPortal
+        tr
+          h1 User Login
+        tr
+          td Username
+          td
+            input.textFormat(type='text', name='username')
+        tr
+          td Password
+          td
+            input.textFormat(type='password', name='password')
+        tr
+          td
+          td
+            input.buttoncss(type='submit', value='Login')
